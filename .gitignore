@@ -1,0 +1,17 @@
+## Mac custom attributes
+.DS_Store
+
+## eclipse ignores 
+.project
+.classpath
+.settings
+/bin
+/target
+*/.project
+*/.classpath
+*/.settings
+*/eclipse-build
+
+# Selflet specific data
+./SelfLetOsgiframeworks
+./logs
