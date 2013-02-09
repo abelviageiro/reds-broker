@@ -16,7 +16,8 @@ public class RedsBrokerMain {
 	public static void main(String[] args) {
 
 		if (args == null || args.length < 1) {
-			System.err.println("Usage\n\tjava it.polimi.elet.reds.RedsBroker brokerPort [otherBrokerAddres]");
+			System.err.println("Usage\n\tjava " + RedsBrokerMain.class.getCanonicalName()
+					+ " brokerPort [otherBrokerAddres]");
 			System.exit(0);
 		}
 
@@ -38,7 +39,8 @@ public class RedsBrokerMain {
 		try {
 			redsBroker.start();
 		} catch (BindException e) {
-			Logger.getLogger("polimi.reds").log(Level.ALL, "Error while starting REDS middleware. There is probably another REDS instance already active");
+			Logger.getLogger("polimi.reds").log(Level.ALL,
+					"Error while starting REDS middleware. There is probably another REDS instance already active");
 			System.exit(0);
 		}
 
