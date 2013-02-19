@@ -80,12 +80,12 @@ public class RedsBroker {
 		reconf.setRouter(router);
 		replyMgr.setReplyTable(replyTbl);
 		overlay.start();
-		System.out.println("overlay id: " + overlay.getID());
+		System.out.println("Overlay id: " + overlay.getID());
 
 		consoleLogHandler = new ConsoleHandler();
 		logger = Logger.getLogger("polimi.reds");
 		logger.addHandler(consoleLogHandler);
-		setConsoleLevel(Level.SEVERE);
+		setConsoleLevel(Level.INFO);
 
 		logger.log(Level.INFO, "[REDS] Broker started at port " + port);
 
