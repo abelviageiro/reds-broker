@@ -37,7 +37,7 @@
 				<configuration>
 					<mainClass>it.polimi.elet.reds.RedsBrokerMain</mainClass>
 					<arguments>
-						<argument>8000</argument>
+						<argument>42000</argument>
 					</arguments>
 				</configuration>
 			</plugin>
